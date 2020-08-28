@@ -32,7 +32,7 @@ public class ParkingController {
 		return service.findSpot(vehicalNo);
 	}
 
-	@RequestMapping(value = "/clear/{vehicalNo}", method = RequestMethod.GET)
+	@RequestMapping(value = "/clear/{vehicalNo}", method = RequestMethod.PUT)
 	public Object clearSpot(@PathVariable(required = true) String vehicalNo) {
 		return service.clearSpot(vehicalNo);
 	}
